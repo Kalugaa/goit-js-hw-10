@@ -36,11 +36,13 @@ function populateBreedSelect(breeds) {
     breedSelect.appendChild(option);
   });
 }
+showLoader();
 
 fetchBreeds()
   .then(breeds => {
     populateBreedSelect(breeds);
     hideLoader();
+    breedSelect.classList.remove('is-hidden');
   })
   .catch(error => {
     showError('Помилка при отриманні порід котів: ' + error.message);
