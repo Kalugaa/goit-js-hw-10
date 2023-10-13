@@ -1,0 +1,33 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+body {
+  background-color: aliceblue;
+}
+.cat-info {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.p-container {
+}
+
+.cat-img {
+  max-width: 800px;
+}
+
+.breed-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+.loader {
+  text-align: center;
+}
+.error {
+   color: red;
+  font-weight: bold;
+  text-align: center;
